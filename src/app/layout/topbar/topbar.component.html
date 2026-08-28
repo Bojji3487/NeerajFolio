@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="headerContainer">
+    <mat-toolbar class="header">
+      <div class="headerLogo">
+        <div
+          class="home-img"
+          data-aos="flip-down"
+          data-aos-easing="ease-in"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
+          <div class="img-circle">
+            <span></span>
+            <span></span>
+            <div class="image">
+              <img src="assets/img/icon.png" alt="profile image" />
+            </div>
+          </div>
+        </div>
+        <div class="mainHeading">
+          <span class="mainTitle">Neeraj Narnolia</span>
+        </div>
+      </div>
+
+      @if (!isMobile()) {
+        <div class="navLinks">
+          <ul>
+            <li><a href="#home" (click)="moveIndicator($event)">Home</a></li>
+            <li><a href="#about" (click)="moveIndicator($event)">About</a></li>
+            <li><a href="#projects" (click)="moveIndicator($event)">Projects</a></li>
+            <li><a href="#resume" (click)="moveIndicator($event)">Resume</a></li>
+            <li><a href="#contact" (click)="moveIndicator($event)">Contact</a></li>
+            <div class="indicator" #indicator></div>
+          </ul>
+        </div>
+      }
+
+      @if (isMobile()) {
+        <div class="menuBtn">
+          <button mat-icon-button (click)="toggleSidenav()">
+            <mat-icon>{{ isMenuOpen() ? 'close' : 'menu' }}</mat-icon>
+          </button>
+        </div>
+      }
+    </mat-toolbar>
+  </div>
+</div>

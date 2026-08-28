@@ -1,0 +1,56 @@
+<div class="container" id="home">
+  <div class="homeContainer">
+    @if (!isMobile()) {
+    <div class="socialIcons">
+      <div class="button fbBtn">
+        <div class="icon" (click)="redirectToFB()">
+          <i class="bx bxl-facebook"></i>
+        </div>
+        <span>Facebook</span>
+      </div>
+      <div class="button linBtn">
+        <div class="icon" (click)="redirectToLinkdin()">
+          <i class="bx bxl-linkedin"></i>
+        </div>
+        <span>Linkedin</span>
+      </div>
+      <div class="button instaBtn">
+        <div class="icon" (click)="redirectToInsta()">
+          <i class="bx bxl-instagram-alt"></i>
+        </div>
+        <span>Instagram</span>
+      </div>
+      <div class="button ytBtn">
+        <div class="icon" (click)="redirectToYT()">
+          <i class="bx bxl-youtube"></i>
+        </div>
+        <span>Youtube</span>
+      </div>
+      <div class="button gitBtn">
+        <div class="icon" (click)="redirectToGithub()">
+          <i class="bx bxl-github"></i>
+        </div>
+        <span>Github</span>
+      </div>
+    </div>
+    }
+
+    <div class="heroSection">
+      <div class="heroText">
+        <h1 data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease forwards">
+          HEY, I'M NEERAJ NARNOLIA
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease forwards">
+          I am a Full stack Developer / Software Engineer focused on building web solutions, and making them work well.
+        </p>
+        <div class="heroBtnGroup" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
+          <a href="#contact" class="btn btnPrimary">Get in Touch</a>
+          <a href="#resume" class="btn btnSecondary">Resume</a>
+        </div>
+      </div>
+      <div class="heroImg" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
+        <img src="assets/img/profile.jpg" alt="Neeraj Narnolia Profile" />
+      </div>
+    </div>
+  </div>
+</div>

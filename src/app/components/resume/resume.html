@@ -1,0 +1,12 @@
+<div class="container" id="resume">
+  <div
+    class="resumeContainer"
+    (mouseenter)="toggleHover(true)"
+    (mouseleave)="toggleHover(false)"
+  >
+    <a href="assets/resume/resume.pdf" target="_blank">
+      <span class="text" [style.display]="isHovered() ? 'none' : 'inline-block'">View Resume</span>
+      <span class="hoverText" [style.display]="isHovered() ? 'inline-block' : 'none'">Download PDF</span>
+    </a>
+  </div>
+</div>

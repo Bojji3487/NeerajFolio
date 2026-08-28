@@ -1,0 +1,88 @@
+:host {
+  display: block;
+}
+
+footer {
+  color: var(--white);
+  background-color: var(--navy);
+  padding: 50px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footerContainer {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  max-width: 1200px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-icons .button {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  margin: 5px 8px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: var(--white);
+  transition: var(--transition);
+}
+
+.social-icons .button .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.social-icons .button .icon i {
+  font-size: 22px;
+  color: var(--navy);
+  transition: var(--transition);
+}
+
+.social-icons .button:hover {
+  background-color: var(--green);
+}
+
+.social-icons .button:hover .icon i {
+  color: var(--white);
+}
+
+.copyright {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--slate);
+  text-align: center;
+}
+
+.rocketIcon {
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.rocketIcon img {
+  width: 45px;
+}
+
+.rocketIcon:hover {
+  transform: translateY(-8px);
+}

@@ -1,0 +1,45 @@
+<div class="container" id="projects">
+  <div class="projectContainer">
+    <h2 class="heading">
+      <span class="headingMain" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        Projects
+      </span>
+      <span class="headingSub" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        Here you will find some of the personal projects that I have worked on.
+      </span>
+    </h2>
+
+    <div class="projectList">
+      <app-project-items Responsive>
+        <img src="assets/projects/project.png" alt="NeerajFolio Screenshot" class="projectsRowImg" loading="lazy" />
+        <h3>NeerajFolio Animated Portfolio</h3>
+        <p>
+          A high-performance, responsive developer portfolio application built with Angular 22, TypeScript, Angular
+          Material, and custom CSS micro-animations.
+        </p>
+        <div class="tools">
+          @for (tool of firstProject; track tool.name) {
+            <span>{{ tool.name }}</span>
+          }
+        </div>
+        <a href="https://github.com/Bojji3487/NeerajFolio" target="_blank">View Code</a>
+      </app-project-items>
+
+      <app-project-items Responsive>
+        <img src="assets/projects/tc-analyzer.png" alt="T&C Risk Analyzer Screenshot" class="projectsRowImg" loading="lazy" />
+        <h3>T&C Risk Analyzer</h3>
+        <p>
+          An AI/ML-driven Browser Extension & Backend that automatically segments legal clauses and detects risk in Terms & Conditions. Built using FastAPI REST APIs, supervised NLP text classification models, and Redis hash-based caching for instant risk evaluation.
+        </p>
+        <div class="tools">
+          @for (tool of secondProject; track tool.name) {
+            <span>{{ tool.name }}</span>
+          }
+        </div>
+        <a href="https://github.com/Ishpreet9/T-C_Analyzer" target="_blank">View Code</a>
+      </app-project-items>
+    </div>
+  </div>
+</div>

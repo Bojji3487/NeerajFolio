@@ -1,0 +1,155 @@
+.aboutContainer {
+  display: flex;
+  color: var(--navy);
+  min-height: 50rem;
+  position: relative;
+  flex-direction: column;
+  background-color: var(--lightest-slate);
+  padding: 6rem 3rem;
+}
+
+.aboutContainer h2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.headingMain {
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  color: var(--navy);
+}
+
+.headingMain::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1.2rem);
+  height: 5px;
+  width: 3rem;
+  background: var(--navy);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.headingSub {
+  max-width: 750px;
+  text-align: center;
+  color: var(--dark-slate);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.aboutContent {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.aboutContentMain {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.aboutContentTitle, .skillsTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 2rem;
+}
+
+.aboutContentDetailsPara {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--dark-slate);
+  margin-bottom: 1.5rem;
+}
+
+.aboutContentDetailsPara strong {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.aboutLink {
+  color: var(--green);
+  font-weight: 700;
+  text-decoration: underline;
+  transition: var(--transition);
+}
+
+.aboutLink:hover {
+  color: var(--navy);
+}
+
+.btnContact {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: var(--navy);
+  color: var(--white);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: var(--btnShadow);
+  margin-top: 1.5rem;
+}
+
+.btnContact:hover {
+  background-color: var(--green);
+  box-shadow: 4px 4px var(--green-white);
+}
+
+.skillsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skillCard {
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  background: rgba(153, 153, 153, 0.18);
+  border-radius: 6px;
+  font-weight: 600;
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: var(--transition);
+}
+
+.skillCard:hover {
+  background: var(--navy);
+  color: var(--white);
+  transform: translateY(-3px);
+}
+
+.skillCard img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.skillCard span {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .aboutContent {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

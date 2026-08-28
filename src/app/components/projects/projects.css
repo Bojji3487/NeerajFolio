@@ -1,0 +1,54 @@
+.projectContainer {
+  display: flex;
+  color: var(--navy);
+  min-height: 50rem;
+  position: relative;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: 5rem 2rem;
+}
+
+.projectContainer h2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.headingMain {
+  font-size: 2.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  color: var(--navy);
+}
+
+.headingMain::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1rem);
+  height: 5px;
+  width: 3rem;
+  background: var(--navy);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.headingSub {
+  max-width: 700px;
+  text-align: center;
+  color: var(--slate);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.projectList {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}

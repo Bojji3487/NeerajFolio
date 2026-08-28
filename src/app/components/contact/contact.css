@@ -1,0 +1,123 @@
+.contactContainer {
+  display: flex;
+  color: black;
+  background: linear-gradient(
+      to right,
+      rgba(217, 228, 179, 0.85),
+      rgba(136, 158, 168, 0.85)
+    ),
+    url('/assets/img/common-bg.svg');
+  background-position: center;
+  background-size: cover;
+  min-height: 50rem;
+  position: relative;
+  flex-direction: column;
+  padding: 5rem 2rem;
+  align-items: center;
+}
+
+.contactContainer h2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.headingMain {
+  font-size: 2.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--navy);
+  position: relative;
+}
+
+.headingMain::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1rem);
+  height: 5px;
+  width: 3rem;
+  background: var(--navy);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.headingSub {
+  max-width: 700px;
+  color: var(--dark-slate);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.contactFormContainer {
+  background: var(--white);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  max-width: 700px;
+  width: 100%;
+}
+
+.contactFormContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 0.85rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: var(--transition);
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: var(--navy);
+  box-shadow: 0 0 0 3px rgba(10, 25, 47, 0.1);
+}
+
+.btnSubmit {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: var(--navy);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: var(--transition);
+  box-shadow: var(--btnShadow);
+}
+
+.btnSubmit:hover:not(:disabled) {
+  background-color: var(--green);
+}
+
+.btnSubmit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}

@@ -1,0 +1,113 @@
+<div class="container" id="about">
+  <div class="aboutContainer">
+    <h2>
+      <span
+        class="headingMain"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease forwards"
+        data-aos-offset="100"
+        data-aos-once="true"
+      >
+        About Me
+      </span>
+      <span
+        class="headingSub"
+        data-aos="fade-up"
+        data-aos-delay="150"
+        data-aos-duration="1000"
+        data-aos-easing="ease forwards"
+        data-aos-offset="100"
+        data-aos-once="true"
+      >
+        Here you will find more information about me, what I do, and my current
+        skills mostly in terms of programming and technology.
+      </span>
+    </h2>
+    <div class="aboutContent">
+      <div class="aboutContentMain">
+        <h3
+          class="aboutContentTitle"
+          data-aos="fade-down-right"
+          data-aos-delay="160"
+          data-aos-duration="1000"
+          data-aos-easing="ease forwards"
+          data-aos-offset="100"
+          data-aos-once="true"
+        >
+          Get to know me!
+        </h3>
+        <div class="aboutContentDetails">
+          <p
+            class="aboutContentDetailsPara"
+            data-aos="fade-up-right"
+            data-aos-delay="180"
+            data-aos-duration="1000"
+            data-aos-easing="ease forwards"
+            data-aos-offset="100"
+            data-aos-once="true"
+          >
+            I'm a <strong>Full Stack Developer / Software Engineer</strong> building and managing Web Solutions, Web Applications, and AI technologies that lead to the success of the overall product. Check out some of my work in the <strong>Projects</strong> section.
+          </p>
+          <p
+            class="aboutContentDetailsPara"
+            data-aos="fade-up-right"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease forwards"
+            data-aos-offset="100"
+            data-aos-once="true"
+          >
+            I also like sharing content related to the stuff that I have learned over the years in <strong>Web Development</strong> so it can help other people of the Dev Community. Feel free to Connect or Follow me on my <a href="https://www.linkedin.com/in/neeraj-narnolia-396804222/" target="_blank" class="aboutLink">Linkedin</a> where I post useful content related to Web Development and Programming.
+          </p>
+          <p
+            class="aboutContentDetailsPara"
+            data-aos="fade-up-right"
+            data-aos-delay="220"
+            data-aos-duration="1000"
+            data-aos-easing="ease forwards"
+            data-aos-offset="100"
+            data-aos-once="true"
+          >
+            I'm open to <strong>Job</strong> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <strong>contact</strong> me.
+          </p>
+        </div>
+        <a
+          href="#contact"
+          class="btn btnContact"
+          data-aos="fade-up-right"
+          data-aos-delay="240"
+        >
+          Contact
+        </a>
+      </div>
+      <div class="skillsContainer">
+        <h3
+          class="skillsTitle"
+          data-aos="fade-down-left"
+          data-aos-delay="160"
+          data-aos-duration="1000"
+          data-aos-easing="ease forwards"
+          data-aos-offset="100"
+          data-aos-once="true"
+        >
+          My Skills
+        </h3>
+        <div class="skillsGrid">
+          @for (skill of skills; track skill.name) {
+            <div
+              class="skillCard"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              data-aos-duration="800"
+            >
+              <img [src]="skill.image" [alt]="skill.name" />
+              <span>{{ skill.name }}</span>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

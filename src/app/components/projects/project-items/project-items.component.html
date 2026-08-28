@@ -1,0 +1,16 @@
+<div class="projectsRow">
+  <div class="projectsRowImgCont">
+    <ng-content select="img"></ng-content>
+  </div>
+  <div class="projectsRowContent">
+    <ng-content select="h3"></ng-content>
+    <ng-content select="p"></ng-content>
+    <div class="projectsRowContentTools">
+      <ng-content select="div.tools"></ng-content>
+      <ng-content select="ul"></ng-content>
+    </div>
+    <div class="projectsRowContentLinks">
+      <ng-content select="a"></ng-content>
+    </div>
+  </div>
+</div>
