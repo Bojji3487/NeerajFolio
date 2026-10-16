@@ -13,7 +13,7 @@
 
     <div class="projectList">
       <app-project-items Responsive>
-        <img src="assets/projects/project.png" alt="NeerajFolio Screenshot" class="projectsRowImg" loading="lazy" />
+        <img src="assets/projects/project.png" alt="Project - NeerajFolio" class="projectsRowImg" loading="lazy" />
         <h3>NeerajFolio Animated Portfolio</h3>
         <p>
           A high-performance, responsive developer portfolio application built with Angular 22, TypeScript, Angular
@@ -21,21 +21,38 @@
         </p>
         <div class="tools">
           @for (tool of firstProject; track tool.name) {
-            <span>{{ tool.name }}</span>
+          <span>{{ tool.name }}</span>
           }
         </div>
         <a href="https://github.com/Bojji3487/NeerajFolio" target="_blank">View Code</a>
       </app-project-items>
 
       <app-project-items Responsive>
-        <img src="assets/projects/tc-analyzer.png" alt="T&C Risk Analyzer Screenshot" class="projectsRowImg" loading="lazy" />
+        <img src="assets/projects/resumator.png" alt="Project - Resumator" class="projectsRowImg" loading="lazy" />
+        <h3>Resumator</h3>
+        <p>
+          An AI-powered resume builder that helps you create professional resumes in minutes.
+        </p>
+        <div class="tools">
+          @for (tool of thirdProject; track tool.name) {
+          <span>{{ tool.name }}</span>
+          }
+        </div>
+        <a href="https://resumatorr.netlify.app" target="_blank">See Live Demo</a>
+        <a href="https://github.com/Bojji3487/resumator" target="_blank">View Code</a>
+      </app-project-items>
+      <app-project-items Responsive>
+        <img src="assets/projects/tc-analyzer.png" alt="Project - T&C Risk Analyzer" class="projectsRowImg"
+          loading="lazy" />
         <h3>T&C Risk Analyzer</h3>
         <p>
-          An AI/ML-driven Browser Extension & Backend that automatically segments legal clauses and detects risk in Terms & Conditions. Built using FastAPI REST APIs, supervised NLP text classification models, and Redis hash-based caching for instant risk evaluation.
+          An AI/ML-driven Browser Extension & Backend that automatically segments legal clauses and detects risk in
+          Terms & Conditions. Built using FastAPI REST APIs, supervised NLP text classification models, and Redis
+          hash-based caching for instant risk evaluation.
         </p>
         <div class="tools">
           @for (tool of secondProject; track tool.name) {
-            <span>{{ tool.name }}</span>
+          <span>{{ tool.name }}</span>
           }
         </div>
         <a href="https://github.com/Ishpreet9/T-C_Analyzer" target="_blank">View Code</a>

@@ -28,4 +28,11 @@ export class Projects {
     { name: 'NLP' },
     { name: 'Redis' }
   ];
+
+  thirdProject: Tools[] = [
+    { name: 'React' },
+    { name: 'MongoDB' },
+    { name: 'Node.js' },
+    { name: 'TypeScript' }
+  ];
 }
